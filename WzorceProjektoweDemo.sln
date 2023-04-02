@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FasadaDemo", "FasadaDemo\FasadaDemo.csproj", "{79A941F9-DCEF-4E18-97E7-EA56978A058F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FasadaDemo", "FasadaDemo\FasadaDemo.csproj", "{79A941F9-DCEF-4E18-97E7-EA56978A058F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorDemo", "MediatorDemo\MediatorDemo.csproj", "{743BFDA2-A1E5-413E-BBEE-427BEE97CB13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonDemo", "SingletonDemo\SingletonDemo.csproj", "{14BED257-AAF1-4C8E-93C6-F84223AA3D51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{79A941F9-DCEF-4E18-97E7-EA56978A058F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79A941F9-DCEF-4E18-97E7-EA56978A058F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79A941F9-DCEF-4E18-97E7-EA56978A058F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{743BFDA2-A1E5-413E-BBEE-427BEE97CB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743BFDA2-A1E5-413E-BBEE-427BEE97CB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743BFDA2-A1E5-413E-BBEE-427BEE97CB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743BFDA2-A1E5-413E-BBEE-427BEE97CB13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BED257-AAF1-4C8E-93C6-F84223AA3D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BED257-AAF1-4C8E-93C6-F84223AA3D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BED257-AAF1-4C8E-93C6-F84223AA3D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BED257-AAF1-4C8E-93C6-F84223AA3D51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
