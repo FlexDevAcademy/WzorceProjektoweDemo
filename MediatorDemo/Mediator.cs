@@ -68,10 +68,10 @@ namespace MediatorDemo
                 this._component2.DoC();
             }
             
-            if (operation == "B")
+            if (operation == "D")
             {
                 Console.WriteLine("Mediator react on action B and triggers on folowing operation: ");
-                this._component2.DoD();
+                this._component1.DoB();
             }
 
 
