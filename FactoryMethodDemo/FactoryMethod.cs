@@ -66,7 +66,7 @@
         public void UseCompany(Transport transport)
         {
             Console.WriteLine("Starting to use tramsport" + transport.GetType().ToString());
-            transport.LogisticOperation();
+            Console.WriteLine(transport.LogisticOperation());
         }
     }
 }
