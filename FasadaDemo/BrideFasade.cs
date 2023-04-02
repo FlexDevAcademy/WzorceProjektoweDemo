@@ -12,7 +12,7 @@ namespace FasadaDemo
 
         public double WeddingCosts = 0;
 
-        public string MakeWedding()
+        public string MakeWedding(int guests, int members)
         {
             Restaurant restaurant = new Restaurant();
             Band band = new Band();
