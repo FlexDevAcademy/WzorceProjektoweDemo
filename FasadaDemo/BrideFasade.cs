@@ -10,18 +10,18 @@ namespace FasadaDemo
     {
         public double WeddingCosts = 0;
 
-        public string MakeWeeding(int guests, int members)
+        public string MakeWedding(int guests, int members)
         {
             Restaurant restaurant = new Restaurant();
             Band band = new Band();
-            FloverShop flovershop = new FloverShop();
+            FlowerShop flowerShop = new FlowerShop();
 
             WeddingCosts += restaurant.EstimateCosts(guests);
             WeddingCosts += band.EstimateCosts(members);
-            WeddingCosts += flovershop.EstimateCosts();
+            WeddingCosts += flowerShop.EstimateCosts();
 
             restaurant.BuyIngredients(guests);
-            flovershop.MakeFlovers();
+            flowerShop.MakeAFlowers();
             band.MakeAConcert();
 
             bool isDishesReady = restaurant.GetDishes(guests);
