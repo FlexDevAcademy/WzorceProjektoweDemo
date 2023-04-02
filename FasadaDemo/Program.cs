@@ -1,2 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using FasadaDemo;
+
+BrideFasade brideFasadeInstance = new BrideFasade();
+
+Console.WriteLine(brideFasadeInstance.MakeWeeding(150 ,6));
+
+
+
+
+
+
