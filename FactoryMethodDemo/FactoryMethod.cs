@@ -20,9 +20,7 @@ namespace FactoryMethodDemo
 
             return "Package delivered: " + result;
         }
-
     }
-
     class Package1 : IPackage
     {
         public string DeliverPackage()
@@ -31,7 +29,6 @@ namespace FactoryMethodDemo
         }
 
     }
-
     class Package2 : IPackage
     {
         public string DeliverPackage()
@@ -40,7 +37,6 @@ namespace FactoryMethodDemo
         }
 
     }
-
     class DHL : Transport
     {
         public override IPackage FactoryMethod()
@@ -54,13 +50,11 @@ namespace FactoryMethodDemo
         {
             return new Package2();
         }
-    }
  
     }
     public interface IPackage
     {
         string DeliverPackage();
-    }
 
     }
     class Client
