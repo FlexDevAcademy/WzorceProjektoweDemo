@@ -2,5 +2,4 @@
 using FactoryMethodDemo;
 
 Console.WriteLine("Hello, World!");
-
 new Client().Main();
