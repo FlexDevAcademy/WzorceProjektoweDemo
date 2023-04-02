@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorDemo", "MediatorDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonDemo", "SingletonDemo\SingletonDemo.csproj", "{677C5974-9030-4F97-86B2-D4D1A91779B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodDemo", "FactoryMethodDemo\FactoryMethodDemo.csproj", "{491FB692-CD13-47D5-892C-BE8B65395014}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{677C5974-9030-4F97-86B2-D4D1A91779B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{677C5974-9030-4F97-86B2-D4D1A91779B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{677C5974-9030-4F97-86B2-D4D1A91779B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491FB692-CD13-47D5-892C-BE8B65395014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491FB692-CD13-47D5-892C-BE8B65395014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491FB692-CD13-47D5-892C-BE8B65395014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491FB692-CD13-47D5-892C-BE8B65395014}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
