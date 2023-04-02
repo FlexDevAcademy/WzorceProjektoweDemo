@@ -65,10 +65,10 @@ namespace BuilderDemo
 
         public void Reset()
         {
-           this.house = new House();
+            this.house = new House();
 
         }
-       
+
         void IBuilder.BuildFloors()
         {
             this.house.Add("Add floors");
