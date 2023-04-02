@@ -44,12 +44,12 @@ namespace MediatorDemo
     {
         public void DoC()
         {
-            Console.WriteLine("Component1 DoA");
+            Console.WriteLine("Component2 DoA");
             this._mediator.Notify(this, "C");
         }
         public void DoD()
         {
-            Console.WriteLine("Component1 DoD");
+            Console.WriteLine("Component2 DoD");
             this._mediator.Notify(this, "D");
         }
     }
