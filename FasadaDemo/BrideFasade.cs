@@ -16,14 +16,14 @@ namespace FasadaDemo
         {
             Restaurant restaurant = new Restaurant();
             Band band = new Band();
-            FloverShop flovershop = new FloverShop();
+            FlowerShop flowershop = new FlowerShop();
 
             WeddingCosts += restaurant.EstimateCosts(guests);
             WeddingCosts += band.EstimateCosts(members);
-            WeddingCosts += flovershop.EstimateCosts();
+            WeddingCosts += flowershop.EstimateCosts();
             
             restaurant.BuyIngredients(guests);
-            flovershop.MakeFlovers();
+            flowershop.MakeFlowers();
             band.MakeAConcert();
 
             bool isDishesReady = restaurant.GetDishes(guests);

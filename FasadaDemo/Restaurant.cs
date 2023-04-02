@@ -15,7 +15,7 @@ namespace FasadaDemo
             return guests * 180;
         }
 
-        public void BuyIngedients(int guests)
+        public void BuyIngredients(int guests)
         {
             Ingredients = guests;
         }

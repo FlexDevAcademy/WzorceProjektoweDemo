@@ -3,7 +3,7 @@ using FasadaDemo;
 
 BrideFasade brideFasadeInstance = new BrideFasade();
 
-Console.WriteLine(brideFasadeInstance.MakeWeeding(150 ,6));
+Console.WriteLine(brideFasadeInstance.MakeWedding(150 ,6));
 
 
 
