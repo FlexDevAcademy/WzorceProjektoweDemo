@@ -10,7 +10,7 @@ namespace FasadaDemo
     {
         public double EstimateCosts(int members)
         {
-            return members * 1000
+            return members * 1000;
         }
 
         public void MakeAConcert()

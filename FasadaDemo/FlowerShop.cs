@@ -8,7 +8,16 @@ namespace FasadaDemo
 {
     internal class FlowerShop
     {
-        p
+        public double EstimateCosts()
+        {
+            return 10000;
+        }
+
+        public void MakeFlowers()
+        {
+            return;
+        }
+
 
     }
 }
