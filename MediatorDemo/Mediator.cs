@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MediatorDemo
 {
-    public interface IMediator
+     public interface IMediator
     {
         void Notify(object sender, string operation);
 
@@ -40,13 +41,13 @@ namespace MediatorDemo
                 this._component1.DoB();
             }
 
-        }
+    }
     }
 
     class BaseComponent
     {
         protected IMediator _mediator;
-        
+
         public BaseComponent(IMediator mediator = null)
         {
             this._mediator = mediator;
@@ -65,14 +66,15 @@ namespace MediatorDemo
         {
             Console.WriteLine("Component1 DoA");
             this._mediator.Notify(this, "A");
-        }
-
+        }        
+        
+        
         public void DoB()
         {
             Console.WriteLine("Component1 DoB");
             this._mediator.Notify(this, "B");
         }
-    }
+    }    
     
     class Component2 : BaseComponent
     {
@@ -80,8 +82,9 @@ namespace MediatorDemo
         {
             Console.WriteLine("Component2 DoC");
             this._mediator.Notify(this, "C");
-        }
-
+        }        
+        
+        
         public void DoD()
         {
             Console.WriteLine("Component2 DoD");
