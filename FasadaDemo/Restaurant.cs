@@ -6,7 +6,32 @@ using System.Threading.Tasks;
 
 namespace FasadaDemo
 {
-    internal class Restaurant
+    public class Restaurant
     {
+        private int Ingredients = 0;
+
+        public double EstimateCosts(int guests)
+        {
+            return guests * 180;
+        }
+
+        public void BuyIngedients(int guests)
+        {
+            Ingredients = guests;
+        }
+
+        public bool GetDishes(int guests)
+        {
+            if (Ingredients >= guests)
+
+            {
+                return true;
+
+            }
+
+            return false;
+
+        }
+
     }
 }
