@@ -10,23 +10,28 @@ namespace FasadaDemo
     {
         private int Ingredients = 0;
 
-        public double EstimateCosts(int guest)
+        public double EstimateCosts(int guests)
         {
-            return guest * 180;
-
+            return guests * 180;
         }
-        public void BuyIngredients(int guest )
-        {
-            Ingredients = guest;
 
-        }
-        public bool GetDishes(int guest)
+        public void BuyIngedients(int guests)
         {
-            if (Ingredients>= guest)
-    {
+            Ingredients = guests;
+        }
+
+        public bool GetDishes(int guests)
+        {
+            if (Ingredients >= guests)
+
+            {
                 return true;
+
             }
-            return false;            
+
+            return false;
+
         }
+
     }
 }
