@@ -8,9 +8,7 @@ namespace MediatorDemo
 {
    public interface IMediator
     {
-        void Notify(object sender, string operation);
-
-
+        void Notify(object sender, string ev);
     }
 
     class ConcreteMediator : IMediator
@@ -21,22 +19,21 @@ namespace MediatorDemo
         public ConcreteMediator(Component1 component1, Component2 component2)
         {
             this._component1 = component1;
-            this._component2 = component2;
-
+            this._component2= component2;
             this._component1.SetMediator(this);
             this._component2.SetMediator(this);
         }
 
         public void Notify(object sender, string operation)
         {
-            if (operation == "A")
+            if (operation== "A")
             {
-                Console.WriteLine("Mediator react on action A and triggers on folowing operation: ");
+                Console.WriteLine("Mediator react on action A and riggers on following operation.");
                 this._component2.DoC();
             }
             if (operation == "D")
             {
-                Console.WriteLine("Mediator react on action D and triggers on folowing operation: ");
+                Console.WriteLine("Mediator react on action D and riggers on following operation.");
                 this._component1.DoB();
             }
 
@@ -63,28 +60,25 @@ namespace MediatorDemo
     {
         public void DoA()
         {
-            Console.WriteLine("Component1 DoA");
+            Console.WriteLine("Component DoA");
             this._mediator.Notify(this, "A");
         }
 
         public void DoB()
         {
-            Console.WriteLine("Component1 DoB");
+            Console.WriteLine("Component DoB");
             this._mediator.Notify(this, "B");
-        }
-    }
-    
-    class Component2 : BaseComponent
-    {
+        } }
+    class Component2 : BaseComponent { 
         public void DoC()
         {
-            Console.WriteLine("Component2 DoC");
+            Console.WriteLine("Component DoC");
             this._mediator.Notify(this, "C");
         }
 
         public void DoD()
         {
-            Console.WriteLine("Component2 DoD");
+            Console.WriteLine("Component DoD");
             this._mediator.Notify(this, "D");
         }
     }

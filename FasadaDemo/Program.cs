@@ -1,12 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using FasadaDemo;
 
-BrideFasade brideFasadeInstance = new BrideFasade();
 
-Console.WriteLine(brideFasadeInstance.MakeWeeding(150 ,6));
+BrideFasade brideFasadeIstance = new BrideFasade();
 
-
-
-
-
-
+Console.WriteLine(brideFasadeIstance.MakeWedding(150,6));
