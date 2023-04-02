@@ -20,13 +20,8 @@ namespace FasadaDemo
 
             WeddingCosts += restaurant.EstimateCosts(guests);
             WeddingCosts += band.EstimateCosts(members);
-            WeddingCosts += flowershop.EstimateCosts();
-            
-            restaurant.BuyIngredients(guests);
-            flowershop.MakeFlowers();
-            band.MakeAConcert();
-
             bool isDishesReady = restaurant.GetDishes(guests);
+
             if (isDishesReady)
             {
                 return "Wedding is ready";
