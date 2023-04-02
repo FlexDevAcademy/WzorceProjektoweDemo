@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace FasadaDemo
 {
-    internal class Band
+    public class Band
     {
+        public double EstimateCosts(int member)
+        {
+            return member * 1000;
+        }
+
+        public void MakeAConcert()
+        {
+            return;
+        }
     }
 }

@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace FasadaDemo
 {
-    internal class FlowerShop
+    public class FlowerShop
     {
+        public double EstimateCosts()
+        {
+            return 1000;
+        }
+
+        public void MakeFlowers()
+        {
+            return;
+        }
     }
 }
