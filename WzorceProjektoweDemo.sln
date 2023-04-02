@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FasadaDemo", "FasadaDemo\Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonDemo", "SingletonDemo\SingletonDemo.csproj", "{09466EC0-A977-4358-BA1A-013F72D5F6BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodDemo", "FactoryMethodDemo\FactoryMethodDemo.csproj", "{291C30E8-FD53-4173-906B-32FCB0D6DD4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{09466EC0-A977-4358-BA1A-013F72D5F6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09466EC0-A977-4358-BA1A-013F72D5F6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09466EC0-A977-4358-BA1A-013F72D5F6BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291C30E8-FD53-4173-906B-32FCB0D6DD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291C30E8-FD53-4173-906B-32FCB0D6DD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291C30E8-FD53-4173-906B-32FCB0D6DD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291C30E8-FD53-4173-906B-32FCB0D6DD4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
