@@ -30,12 +30,12 @@ namespace MediatorDemo
         {
             if(operation == "A")
             {
-                Console.Writeline("Mediator reacts on action A and triggers on following operations: ");
+                Console.WriteLine("Mediator reacts on action A and triggers on following operations: ");
                 this._component2.DoC();
             }
             if (operation == "D")
             {
-                Console.Writeline("Mediator reacts on action D and triggers on following operations: ");
+                Console.WriteLine("Mediator reacts on action D and triggers on following operations: ");
                 this._component1.DoB();
             }
 
@@ -74,7 +74,7 @@ namespace MediatorDemo
     {
         public void DoC()
         {
-            Console.WriteLine("Component2 DoA");
+            Console.WriteLine("Component2 DoC");
             this._mediator.Notify(this, "C");
         }
         public void DoD()
