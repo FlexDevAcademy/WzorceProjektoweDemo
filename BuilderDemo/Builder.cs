@@ -57,6 +57,17 @@ namespace BuilderDemo
     {
 
         House house = new House();
+
+        public HouseBuilder()
+        {
+            this.Reset();
+        }
+
+        public void Reset()
+        {
+           this.house = new House();
+
+        }
        
         void IBuilder.BuildFloors()
         {
@@ -81,6 +92,7 @@ namespace BuilderDemo
         public House GetHouse()
         {
             House result = this.house;
+            this.Reset();
             return result;
         }
     }

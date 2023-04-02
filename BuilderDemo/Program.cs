@@ -16,6 +16,9 @@
             {
                 Console.WriteLine(part);
             }
+            
+            
+            Console.WriteLine("Building luxury house");
 
             director.BuildLuxuryHouse();
             var houseWithPool = houseBuilder.GetHouse();
