@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodDemo
 {
-    abstract class Transport
+   abstract class Transport
     {
         public abstract IPackage FactoryMethod();
 
@@ -14,6 +14,7 @@ namespace FactoryMethodDemo
         {
             Console.WriteLine("Creating instance of FactoryMethod");
             var package = FactoryMethod();
+
             Console.WriteLine("Delivering package started");
             var result = package.DeliverPackage();
 
@@ -28,6 +29,7 @@ namespace FactoryMethodDemo
         {
             return "Delivering package 1";
         }
+
     }
 
     class Package2 : IPackage
@@ -36,6 +38,7 @@ namespace FactoryMethodDemo
         {
             return "Delivering package 2";
         }
+
     }
 
     class DHL : Transport
@@ -52,12 +55,14 @@ namespace FactoryMethodDemo
             return new Package2();
         }
     }
-
+ 
+    }
     public interface IPackage
     {
         string DeliverPackage();
     }
 
+    }
     class Client
     {
         public void Main()
@@ -71,7 +76,7 @@ namespace FactoryMethodDemo
 
         public void UseCompany(Transport transport)
         {
-            Console.WriteLine("Starting to use transport " + transport.GetType().ToString());
+            Console.WriteLine("Starting to use transport" + transport.GetType().ToString());
             Console.WriteLine(transport.LogisticOperation());
         }
     }
