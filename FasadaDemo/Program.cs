@@ -1,19 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using FasadaDemo;
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, my wedding!");
+BrideFasade brideFasade = new BrideFasade();
 
-        int guests = 150;
-        int bandMembers = 6;
-
-
-        BrideFasade brideFasade = new BrideFasade();
-        Console.WriteLine(brideFasade.MakeWedding(guests, bandMembers));
-
-        Console.ReadLine();
-    }
-}
+Console.WriteLine(brideFasade.MakeWedding(150, 6));
